@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
 float sqroot(float n)
 {
 	int i=1;
@@ -18,10 +19,20 @@ return a;
 }
 int main()
 {
-	float n;
+	float n,sq;
 	printf("Enter a Number\n");
 	scanf("%f",&n);
-	float sq=sqroot(n);
-	printf("The Square Root of %.2f is %.3f",n,sq);
+	if(n<0)
+	{
+		n=abs(n);
+		sq=sqroot(n);
+		printf("The Square Root of -%.2f is %.3fi",n,sq);
+	}
+	else
+	{
+		sq=sqroot(n);
+		printf("The Square Root of %.2f is %.3f",n,sq);
+	}
 	return 0;
 }
+
