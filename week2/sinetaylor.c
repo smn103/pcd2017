@@ -29,9 +29,10 @@ printf("Enter the Angle in Degree\n");
 scanf("%f",&degree);
 x=convert_rad(degree);
 sum=sine(x);
-printf("The sine of %.1f degrees using Taylors Series is %f \n",degree,sum);
+printf("The sine of %.2f degrees using Taylors Series is %.3f \n",degree,sum);
 s=sin(x);
-printf("The sine of %.1f degrees using the function is %f",degree,s);
+printf("The sine of %.2f degrees using the function is %.3f",degree,s);
 return 0;
 }
+
 
