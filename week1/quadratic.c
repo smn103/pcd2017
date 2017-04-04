@@ -10,24 +10,24 @@ if (disc<0)
 printf("Imaginary Roots\n");
 realpart=-b/(2.0 * a);
 imagpart=sqrt(abs(disc))/(2.0 * a);
-printf("Root 1 = %.2f  +i %.2f\n", realpart, imagpart);
-printf("Root 2 = %.2f  -i %.2f\n", realpart, imagpart);
+printf("Root 1 = %.3f  +i %.3f\n", realpart, imagpart);
+printf("Root 2 = %.3f  -i %.3f\n", realpart, imagpart);
 } 
 else if (disc==0)
 {
 printf("Roots are real and equal\n");
 r1=-b/(2.0 * a);
 r2=r1;
-printf("Root 1 = %.2f\n", r1);
-printf("Root 2 = %.2f\n", r2);
+printf("Root 1 = %.3f\n", r1);
+printf("Root 2 = %.3f\n", r2);
 }
 else if (disc>0)
 {
 printf("Roots are real and distinct \n");
 r1=(-b + sqrt(disc))/(2.0 * a);
 r2=(-b - sqrt(disc))/(2.0 * a);
-printf("Root 1 = %.2f  \n", r1);
-printf("Root 2 = %.2f  \n", r2);
+printf("Root 1 = %.3f  \n", r1);
+printf("Root 2 = %.3f  \n", r2);
 }
 }
 int main()
