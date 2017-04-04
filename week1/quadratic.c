@@ -4,6 +4,11 @@
 void quad(float a, float b, float c)
 {
 float disc,r1, r2, realpart, imagpart;
+if(a==0)
+{
+printf("The Given Equation is not a Quadratic Equation \n");
+exit(0);
+}
 disc=b*b - (4.0*a*c);
 if (disc<0)
 {
