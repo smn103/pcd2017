@@ -1,28 +1,28 @@
 #include<stdio.h>
-int revint(int n)
+int revint(int num)
 {
 int revno=0;
-while(n!=0)
+while(num!=0)
 {
 revno=revno*10;
-revno=revno+n%10;
-n=n/10;
+revno=revno+num%10;
+num=num/10;
 }
 return revno;
 }
 int main()
 {
-int n,revno;
+int num,revno;
 printf("Enter the Number\n");
-scanf("%d",&n);
-revno=revint(n);
-if(revno==n)
+scanf("%d",&num);
+revno=revint(num);
+if(revno==num)
 {
-printf("%d is a Palindrome Number",n);
+printf("%d is a Palindrome Number",num);
 }
 else
 {
-printf("%d is not a Palindrome Number",n);
+printf("%d is not a Palindrome Number",num);
 }
 return 0;
 }
