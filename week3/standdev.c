@@ -2,10 +2,10 @@
 #include<math.h>
 float sumarray(int n, float *a)
 {
-	float sum=0.0;
-	for(int i=0;i<n;i++,a++)
+	float sum=0;
+	for(int i=0;i<n;i++)
 	{
-	sum = sum + *a;
+	sum = sum + *(a+i);
 	}
 	return sum;
 }
@@ -44,6 +44,13 @@ int main()
 	printf("\nStandard Deviation = %.2f\n",sd);
 	return 0;
 }
+
+
+
+
+
+
+
 
 
 
